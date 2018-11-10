@@ -1,6 +1,24 @@
 # 82tu爬虫
 
+## 安装
 
-## 文件说明
+```
 
-utils.py 放一些解释html的函数
+virtualenv .venv -p python3 
+source .venv/bin/activate
+pip install -r requirements.txt
+
+```
+
+## 运行
+
+```
+
+cd a82tu/
+scrapy crawl all
+
+```
+
+## 结果
+
+82tu.db
