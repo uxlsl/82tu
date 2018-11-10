@@ -12,7 +12,7 @@ class MySpider(CrawlSpider):
     start_urls = ['http://www.82tu.cc']
 
     rules = (
-        Rule(LinkExtractor(allow=('/Cl/Ht\d\.html', '/Cl/Ht\d_\d.html'), deny=())),
+        Rule(LinkExtractor(allow=('/Cl/Ht\d\.html', '/Cl/Ht\d_\d+.html'), deny=())),
         Rule(LinkExtractor(allow=('/Ct/Ht\d+.html', )), callback='parse_item'),
     )
 
