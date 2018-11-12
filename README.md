@@ -4,21 +4,23 @@
 
 ```
 
-virtualenv .venv -p python3 
-source .venv/bin/activate
-pip install -r requirements.txt
+docker build --rm -t uxlsl/82tu .
 
 ```
+
 
 ## 运行
 
 ```
-
-cd a82tu/
-scrapy crawl all
+docker run -v `pwd`/data:/data uxlsl/82tu all
 
 ```
 
 ## 结果
 
-82tu.db
+```
+
+data/82tu.db
+
+
+```

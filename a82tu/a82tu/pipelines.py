@@ -13,7 +13,7 @@ class A82TuPipeline(object):
                 'title': '',
                 'info': '',
                 'url': ''}
-        db = dataset.connect('sqlite:///82tu.db')
+        db = dataset.connect('sqlite:////data/82tu.db')
         self.table = db['movie']
         self.table.upsert(tmp, ['url'])
         self.table.create_index(['name', 'country'])
