@@ -6,6 +6,7 @@ from scrapy.linkextractors import LinkExtractor
 
 from a82tu.utils import get_movie_list
 
+
 class MySpider(CrawlSpider):
     name = 'all'
     allowed_domains = ['82tu.cc']
